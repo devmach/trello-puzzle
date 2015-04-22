@@ -13,7 +13,6 @@ var TrelloPuzzle = {
 
   encode: function(str) {
     var h = 7;
-    var letters = 'acdegilmnoprstuw';
     for(var i = 0; i < str.length; ++i) {
       h *= 37;
       h += this._letters.indexOf(str[i]);
